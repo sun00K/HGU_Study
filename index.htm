@@ -8,27 +8,33 @@
     <title>한동 스터디</title>
   </head>
   <body>
-    <div id="container">
-      <nav id="top_nav">
-          <ul id="top_menu">
-              <li class="menu_item" id="noti">NOTIFICATION</li>
-              <li class="menu_item" id="setting">SETTING</li>
-              <li class="menu_item" id="my_page">MY PAGE</li>
+    <nav id="top_nav">
+      <ul id="top_menu">
+          <li class="menu_item" id="noti"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+          <li class="menu_item" id="setting"><img src="/assets/icons/setting.svg" alt="SETTING"></li>
+          <li class="menu_item" id="my_page"><img src="/assets/icons/my.svg" alt="MY PAGE"></li>
+      </ul>
+  </nav>
+    <div id="home">
+        <section id="schedule">
+          <ul id="sch_list">
+            <li class="sch_block" id="sch_cur"></li>
+            <li class="sch_block" id="sch_next"></li>
+            <li class="sch_block" id="sch_tom"></li>
+            <li class="sch_block" id="sch_prep"></li>
           </ul>
-      </nav>
-      <main id="main">
+        </section>
         <section id="banner"></section>
         <section class="post_block" id="recruit"></section>
         <section class="post_block" id="question"></section>
-      </main>
-      <nav id="bot_nav">
-          <ul id="bot_menu">
-              <li class="menu_item" id="home_menu">HOME</li>
-              <li class="menu_item" id="recruit_menu">RECRUIT</li>
-              <li class="menu_item" id="question_menu">QUESTION</li>
-              <li class="menu_item" id="chat_menu">CHAT</li>
-          </ul>
-      </nav>
     </div>
+    <nav id="bot_nav">
+      <ul id="bot_menu">
+          <li class="menu_item bot_menu_but" id="home_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+          <li class="menu_item bot_menu_but" id="recruit_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+          <li class="menu_item bot_menu_but" id="question_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+          <li class="menu_item bot_menu_but" id="chat_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+      </ul>
+    </nav>
   </body>
 </html>

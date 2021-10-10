@@ -1,7 +1,7 @@
 
 Data = [{
     title: "물리학 스터디 모집합니다!",
-    content: "안녕하세요...",
+    content: "앙 선우띠...",
     user: "경식",
     RorQ : "R"
 },

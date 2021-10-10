@@ -1,4 +1,0 @@
-find bottom navigation svg icons
-js --> changing page & bottom navigation button
-fill post block contents
-recruit page html & css

@@ -1,4 +1,23 @@
-const cur_page = document.querySelector('input[name="bot_nav_but"]:checked').value;
 const background_block = document.getElementById('selected');
-
-background_block.style.left = cur_page * 25 + '%';
+const bot_menu_icon = document.querySelectorAll('.bot_menu_icon');
+$('input[name="bot_nav_but"]:radio').change(function (){
+    cur = $("input[name='bot_nav_but']:checked").val();
+    // background_block.style.left = `${cur * 25}%`;
+    // if(cur == 0){
+    //     background_block.style.borderRadius = "0px 0px 20px 0px"
+    // } else if (cur == 1 || cur == 2){
+    //     background_block.style.borderRadius = "0px 0px 20px 20px"
+    // } else{
+    //     background_block.style.borderRadius = "0px 0px 0px 20px"
+    // }
+    background_block.style.left = `${2.5 + cur * 25}%`;
+    for(var i = 0; i < 4; i++){
+        if(i == cur){
+            bot_menu_icon[i].setAttribute("src","/assets/icons/bell_white.svg");
+        }
+        else{
+            bot_menu_icon[i].setAttribute("src","/assets/icons/bell.svg");
+        }
+    }
+    console.log(`${cur}`);
+});

@@ -45,13 +45,17 @@ input[type="radio"] {
   flex-wrap: wrap;
 }
 .menu_item {
-  color: #3819f8;
   list-style: none;
 }
 .bot_menu_but {
   display: block;
   width: 25%;
   height: 50px;
+}
+.bot_menu_but > label {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .bot_menu_but > label > img {
   width: 30px;
@@ -63,15 +67,15 @@ input[type="radio"] {
 
 #selected {
   position: absolute;
-  /* left: 2.5%;
+  left: 2.5%;
   top: 50%;
-  transform: translate(0%, -50%); */
+  transform: translate(0%, -50%);
   display: block;
-  width: 25%;
-  height: 50px;
-  /* width: 20%;
-  height: 40px; */
-  border-bottom-right-radius: 20px;
-  /* border-radius: 20px; */
+  /* width: 25%;
+  height: 50px; */
+  width: 20%;
+  height: 40px;
+  /* border-bottom-right-radius: 20px; */
+  border-radius: 20px;
   background-color: #3819f8;
 }

@@ -30,12 +30,34 @@
         <section class="post_block" id="question"></section>
     </div>
     <nav id="bot_nav">
+      <div id="selected"></div>
       <ul id="bot_menu">
-          <li class="menu_item bot_menu_but" id="home_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
-          <li class="menu_item bot_menu_but" id="recruit_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
-          <li class="menu_item bot_menu_but" id="question_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
-          <li class="menu_item bot_menu_but" id="chat_menu"><img src="/assets/icons/bell.svg" alt="NOTIFICATION"></li>
+          <li class="menu_item bot_menu_but">
+            <label for="home_but">
+              <input type="radio" name="bot_nav_but" id="home_but" value="0" checked = "checked">
+              <img src="/assets/icons/bell_white.svg" alt="NOTIFICATION">
+            </label>
+          </li>
+          <li class="menu_item bot_menu_but">
+            <label for="recruit_but">
+              <input type="radio" name="bot_nav_but" id="recruit_but" value="1">
+              <img src="/assets/icons/bell.svg" alt="NOTIFICATION">
+            </label>
+          </li>
+          <li class="menu_item bot_menu_but">
+            <label for="question_but">
+              <input type="radio" name="bot_nav_but" id="question_but" value="2">
+              <img src="/assets/icons/bell.svg" alt="NOTIFICATION">
+            </label>
+          </li>
+          <li class="menu_item bot_menu_but">
+            <label for="chat_but">
+              <input type="radio" name="bot_nav_but" id="chat_but" value="3">
+              <img src="/assets/icons/bell.svg" alt="NOTIFICATION">
+            </label>
+          </li>
       </ul>
     </nav>
+    <script type="text/javascript" src="page_change.js"></script>
   </body>
 </html>

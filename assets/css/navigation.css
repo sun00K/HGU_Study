@@ -1,3 +1,6 @@
+input[type="radio"] {
+  display: none;
+}
 #top_nav {
   display: block;
   width: 100%;
@@ -49,12 +52,26 @@
   display: block;
   width: 25%;
   height: 50px;
-  background-color: #999;
 }
-.bot_menu_but > img {
+.bot_menu_but > label > img {
   width: 30px;
   position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+#selected {
+  position: absolute;
+  /* left: 2.5%;
+  top: 50%;
+  transform: translate(0%, -50%); */
+  display: block;
+  width: 25%;
+  height: 50px;
+  /* width: 20%;
+  height: 40px; */
+  border-bottom-right-radius: 20px;
+  /* border-radius: 20px; */
+  background-color: #3819f8;
 }

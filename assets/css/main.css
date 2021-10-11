@@ -5,7 +5,8 @@
 }
 /* home screen */
 #home {
-  display: block;
+  position: absolute;
+  overflow: scroll;
   width: 100%;
   height: 100%;
   background-color: rgb(242, 246, 255);
@@ -13,7 +14,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: px;
 }
 #schedule {
   margin: 50px 0px 10px 0px;
@@ -55,6 +55,29 @@
   border-radius: 30px;
   margin: 10px 10px 10px 10px;
 }
-#question {
+#recent_question {
   margin: 10px 10px 75px 10px;
+}
+
+#recruit {
+  visibility: hidden;
+  position: absolute;
+  overflow: scroll;
+}
+#question {
+  visibility: hidden;
+  position: absolute;
+  overflow: scroll;
+}
+#chat {
+  visibility: hidden;
+  position: absolute;
+  overflow: scroll;
+}
+
+.random_block {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #555;
 }

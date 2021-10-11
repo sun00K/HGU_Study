@@ -1,5 +1,6 @@
 const background_block = document.getElementById('selected');
 const bot_menu_icon = document.querySelectorAll('.bot_menu_icon');
+const pages = document.querySelectorAll('.container');
 $('input[name="bot_nav_but"]:radio').change(function (){
     cur = $("input[name='bot_nav_but']:checked").val();
     // background_block.style.left = `${cur * 25}%`;
@@ -14,9 +15,11 @@ $('input[name="bot_nav_but"]:radio').change(function (){
     for(var i = 0; i < 4; i++){
         if(i == cur){
             bot_menu_icon[i].setAttribute("src","/assets/icons/bell_white.svg");
+            pages[i].style.visibility = "visible";
         }
         else{
             bot_menu_icon[i].setAttribute("src","/assets/icons/bell.svg");
+            pages[i].style.visibility = "hidden";
         }
     }
     console.log(`${cur}`);

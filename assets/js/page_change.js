@@ -22,5 +22,4 @@ $('input[name="bot_nav_but"]:radio').change(function (){
             pages[i].style.visibility = "hidden";
         }
     }
-    console.log(`${cur}`);
 });
